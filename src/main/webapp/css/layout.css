@@ -1,0 +1,171 @@
+h2 { font-size:80px; font-weight:bold; color:#000; }
+h3 { font-size:38px; font-weight:bold; color:#000;}
+h4 { font-size:23px; font-weight:bold; color:#000;}
+h5 { font-size:20px; font-weight:bold; margin-bottom:8px; color:#000;}
+h6 { font-size:16px; font-weight:bold; margin-bottom:8px; color:#000;}
+
+
+/* 스와이프 */
+#main .swiper { background:#00C09F; }
+#main .swiper .mySwiper .swiper-wrapper .swiper-slide { height:790px; padding:126px 0; color:#fff; }
+#main .swiper .mySwiper .swiper-wrapper .swiper-slide .swiper_text h2 { margin-bottom:30px; color:#fff;}
+#main .swiper .swiper-button-next:after,
+#main .swiper .swiper-button-prev:after { font-size:0; }
+#main .swiper-button-prev { transform:rotate(-180deg);}
+
+/* 메이커스페이스에서 무엇을 할 수 있나요? */
+#main .main1 .wrap div ul li.gray { background:#e0c15052; }
+#main .main1 .wrap > div { padding:200px 0 0; }
+#main .main1 .wrap > div > h3 { margin-bottom:210px; }
+#main .main1 .wrap div h2 { margin-bottom:210px; }
+#main .main1 .wrap > div > ul > li { margin-bottom:235px; }
+#main .main1 .wrap > div > ul > li ul li { width:47.5%; position:relative;}
+#main .main1 .wrap div ul li.h3-box { height:369px; width:52.5%; }
+#main .main1 .wrap div ul li.float_left { padding-top:75px; }
+#main .main1 .wrap div ul li h3 { margin-bottom:25px; white-space:nowrap; color:#000}
+#main .main1 .wrap div ul li span { color:#6F6F6F; }
+#main .main1 .wrap div ul li.float_right {  }
+#main .main1 .wrap div ul li.h3-box + li div { padding-left:90px; padding-top:75px; }
+
+
+/* 메이커스페이스에서 즐기기 */
+#main .main2 { padding-bottom:210px; }
+#main .main2 h2 { margin-bottom:45px; }
+#main .main2 .wrap ul li { margin-bottom:3%; float:left; width:48.5%; border-radius:10px; height:290px; }
+#main .main2 .wrap ul li:nth-child(odd) { margin-right:1.5%; background-image:url("../img/main01.jpg"); }
+#main .main2 .wrap ul li:nth-child(even) { margin-left:1.5%; background-image:url("../img/main02.png"); }
+
+
+
+/* 이미 메이커스페이스
+운영을 하고 계시거나
+전문가로 활동 중이신가요? */
+#main .main3 {  }
+#main .main3 h3 { color:#fff; margin-bottom:45px; }
+#main .main3 div.float_left { width:50%; padding:200px 0px; height:600px; }
+#main .main3 div.float_left:first-child { background:#FFC245; }
+#main .main3 div.float_left:last-child { background:#EB6F8A; }
+#main .main3 div ul li { display:inline-block; }
+#main .main3 div ul li:first-child { margin-right:20px; }
+#main .main3 div ul li a { font-size:30px; color:#00C09F;  background:#fff; border-radius:30px; display:block; padding:10px 30px; font-weight:500; }
+
+
+
+/* 반응형 */
+@media screen and ( max-width:1280px ) {
+  h2 { font-size:43px; }
+  h3 { font-size:33px; }
+  .wrap { width:1024px; }
+
+  /* 슬라이드 */
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide .swiper_text { padding:0 50px; }
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide .swiper_text h2 { margin-bottom:20px; }
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide { height:700px; padding:150px 0; }
+
+/* 메이커스페이스에서 무엇을 할 수 있나요? */
+  #main .main1 .wrap > div { padding:150px 0 0;}
+  #main .main1 .wrap > div > h3,
+  #main .main1 .wrap > div > ul > li { margin-bottom:150px; }
+
+  /* 이미 메이커스페이스
+  운영을 하고 계시거나
+  전문가로 활동 중이신가요?  */
+  #main .main3 .wrap div ul li a { font-size:16px; }
+}
+
+@media screen and ( max-width:1024px ) {
+  h2 { font-size:38px; }
+  h3 { font-size:30px; }
+  .wrap { width:auto; padding:0 20px;}
+  #main { padding:0; }
+
+  /* 슬라이드 */
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide { height:500px; padding:120px 0; }
+
+/* 메이커스페이스에서 무엇을 할 수 있나요? */
+  #main .main1 .wrap > div > h3,
+  #main .main1 .wrap > div > ul > li { margin-bottom:85px; }
+  #main .main1 .wrap div ul li div { padding-left:10px; }
+  #main .main1 .wrap div ul li.h3-box { height:300px; }
+  #main .main1 .wrap div ul li.h3-box + li div { padding-left:20px; padding-top:40px; }
+  #main .main1 .wrap div ul li.float_left { padding-top:40px;}
+
+  /* 이미 메이커스페이스
+  운영을 하고 계시거나
+  전문가로 활동 중이신가요?  */
+  #main .main3 { height:650px; }
+  #main .main3 .wrap div ul li a { font-size:15px; }
+
+}
+
+@media screen and ( max-width:768px ) {
+  body { font-size:16px; }
+  h2 { font-size:24px; }
+  h3 { font-size:20px; }
+  h5 { font-size:18px; }
+
+  #main { padding-top:60px; }
+  /* 슬라이드 */
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide { height:400px; padding:80px 0; }
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide .swiper_text { padding:0 50px; }
+
+
+/* 메이커스페이스에서 무엇을 할 수 있나요? */
+  #main .main1 .wrap > div { padding:60px 0 0; }
+  #main .main1 .wrap > div > h3 { margin-bottom:20px; }
+  #main .main1 .wrap > div > ul > li { margin-bottom:0px; }
+  #main .main1 .wrap div ul li.h3-box { height:250px; }
+  #main .main1 .wrap div ul li div.abs_center h3 { margin:0; line-height:2.5em; }
+  #main .main1 .wrap > div > ul > li:nth-child(2) ul li:first-child,
+  #main .main1 .wrap > div > ul > li:last-child ul li:first-child {order:2;}
+  #main .main1 .wrap div ul li.float_left,
+  #main .main1 .wrap div ul li.h3-box + li div { padding:75px 0; }
+  #main .main1 .wrap > div > ul > li ul { display: flex; flex-direction:column;}
+  #main .main1 .wrap > div > ul > li ul li { width:100%;  position:relative; }
+  #main .main1 .wrap div ul li ul li div { margin:0 auto; width:450px; }
+
+  /* 메이커스페이스에서 즐기기 */
+  #main .main2 { padding-bottom:100px; }
+  #main .main2 h2 { margin-top:120px; }
+  #main .main2 .wrap ul li { border-radius:0; height:200px; width:100%; }
+
+  /* 이미 메이커스페이스
+  운영을 하고 계시거나
+  전문가로 활동 중이신가요?  */
+  #main .main3 { height:auto; }
+  #main .main3 .wrap div ul li a { font-size:13px; }
+  #main .main3 .wrap div ul li:first-child { margin-right:10px; }
+  #main .main3 div.float_left { width:100%; height:auto; padding:60px 0; }
+  #main .main3 div ul li a { font-size:14px; }
+
+}
+
+@media screen and ( max-width:480px ) {
+  body { font-size:15px; }
+  h2 { font-size:18px; }
+  h3 { font-size:14px; }
+  h5 { margin-bottom:3px; }
+
+  #main { padding-top:40px; }
+  .wrap { padding:0 15px; }
+
+  /* 슬라이드 */
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide { height:335px; padding:80px 0; }
+  #main .swiper .mySwiper .swiper-wrapper .swiper-slide p { font-size:12px; }
+
+  /* 메이커스페이스에서 무엇을 할 수 있나요? */
+  #main .main1 .wrap div ul li.h3-box { height:220px; }
+  #main .main1 .wrap div ul li ul li div { width:300px; }
+  #main .main1 .wrap div ul li h3 { font-weight:bold; font-size:18px; }
+
+  /* 메이커스페이스에서 즐기기 */
+  #main .main2 .wrap ul li { height:150px; }
+
+  /* 이미 메이커스페이스
+  운영을 하고 계시거나
+  전문가로 활동 중이신가요?  */
+  #main .main3 h3 { margin-bottom:30px; font-size:18px; }
+  #main .main3 .wrap div ul li { display:block; }
+  #main .main3 .wrap div ul li:first-child { margin-right:0; margin-bottom:20px; }
+  #main .main3 .wrap div ul li a { max-width:70%; margin:0 auto; padding:10px; }
+}

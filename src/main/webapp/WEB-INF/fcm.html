@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+ 
+<h1 id="order"></h1>
+ 
+<h1> 파이어 메세지</h1>
+<script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "d5upCiCeRLig72Eygng3CD:APA91bGRGvnF4RaVnuzeb0Mj1aOU15Lpxm18Ve0ISiAGar217V5mBswKQzPuHEO3qR7IAcg8FwBPF7yTX2mAyVorTf1P4Uw43lJTrgbv_YnbSWojtGaIF3wVHQa9ePfzJrfaBJxRd-AA",
+        authDomain: "test-4e9a6.firebaseapp.com",
+        databaseURL: "https://test-4e9a6.firebaseio.com",
+        projectId: "test-4e9a6",
+        storageBucket: "test-4e9a6.appspot.com",
+        messagingSenderId: "90275796882"
+    };
+    firebase.initializeApp(config);
+ 
+    const messaging = firebase.messaging();
+ 
+    //token값 알아내기
+    messaging.requestPermission()
+        .then(function(){
+            console.log("Have permission");
+            return messaging.getToken();
+        })
+        .then(function(token){
+            console.log(token);
+        })
+        .catch(function(arr){
+            console.log("Error Occured");
+        });
+ 
+ 
+</script>
+ 
+</body>
+</html>

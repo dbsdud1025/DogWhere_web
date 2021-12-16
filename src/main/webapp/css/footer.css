@@ -1,0 +1,56 @@
+#footer { color:#6F6F6F; padding:60px 0; border-top:1px solid #6F6F6F; background:#FCFCFC; }
+#footer .pc h3 { font-size:18px; margin-bottom:10px; }
+#footer .pc .float_left { width:50%; }
+
+#footer .pc .foot_title ul li { display:inline-block; font-size:15px; }
+#footer .pc .foot_title { padding-left:170px; }
+
+
+#footer .pc .float_left02 { padding-left:60px; overflow:hidden; }
+#footer .pc .float_left02 ul { margin-right:160px; float:left;}
+#footer .pc .float_left02 ul:last-child { margin:0; }
+#footer .pc .float_left02 ul li { display:block; }
+#footer .pc ul li a { color:#6F6F6F; font-size:18px; display:block; padding:5px 0px; }
+
+
+
+/* 반응형 */
+@media screen and ( max-width:1600px ) {
+  #footer .pc .float_left02 { padding-left:30px;}
+  #footer .pc .float_left02 ul { margin-right:98px; }
+  #footer .pc .foot_title { padding-left:130px; }
+}
+
+@media screen and ( max-width:1280px ) {
+  #footer { padding:50px 0; }
+  #footer .pc .foot_title { padding-left:20px; }
+  #footer .pc .float_left02 ul { margin-right:35px; }
+  #footer .pc ul li a { font-size:15px; padding:3px 0; }
+}
+@media screen and ( max-width:1024px ) {
+
+
+}
+@media screen and ( max-width:768px ) {
+  #footer { padding:6.6vw 0 22vw; text-align:center; background:#F5F5F5; }
+  #footer .mobile img.logo { width:13vw; margin-top:3vw; }
+  #footer .mobile ul { margin-bottom:3vw; }
+  #footer .mobile ul li { display:inline-block; }
+  #footer .mobile ul li,
+  #footer .mobile ul li a { font-size:2.9vw; }
+  #footer .mobile ul li::after { content:"|"; display:inline-block; margin:0 1.3vw; color:#E2DADA; }
+  #footer .mobile ul li:last-child::after,
+  #footer .mobile .footer_plotting li::after { display:none; }
+/* 플로팅 */
+  #footer .mobile .footer_plotting { position:fixed; bottom:0; left:0; right:0; text-align:center; z-index:100; background:#fff; padding:1.5vw 0; margin:0;}
+  #footer .mobile .footer_plotting li { float:left; width:20%;}
+  #footer .mobile .footer_plotting li a { padding:1.5vw 0 1vw; font-size:2.6vw; border-right:1px solid #E2DADA; color:#6F6F6F; display:block; position:relative; height:13vw; }
+  #footer .mobile .footer_plotting li:first-child a { color:#EB6114; }
+  #footer .mobile .footer_plotting li:last-child a { border-right:none; }
+  #footer .mobile .footer_plotting li p { position:absolute; bottom:1.3vw; left:0; right:0;  }
+    #footer .mobile .footer_plotting li:last-child a img { margin-top:1.5vw;}
+  #footer .mobile .footer_plotting li a img { margin-bottom:7px; width:25%;}
+}
+@media screen and ( max-width:480px ) {
+
+}

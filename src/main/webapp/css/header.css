@@ -1,0 +1,99 @@
+#header { background:#fff; font-size:17px; }
+#header.fixed { position:fixed; top:0; left:0; right:0; z-index:999; }
+#header .head { position:relative; padding:0px 75px 0px 65px; height:80px; }
+#header .head .logo { float:left; width:104px; position:relative; top:50%; transform:translate(0,-50%);}
+#header .head .logo img { width:90px; margin-bottom:7px; }
+
+/* 햄버거 */
+#header .head .icon { width:30px; height:30px; margin:10px 10px; position:absolute; right:0; cursor:pointer; display:inline-block; display:none; }
+#header .head .icon span { background-color:#495057; position: absolute; border-radius: 2px; height:2px; }
+#header .head .icon span:nth-child(1){ width:100%; display:block; top:2px; left:0px; }
+#header .head .icon span:nth-child(2){ width:100%; display:block; top:13px; left:0px; }
+#header .head .icon span:nth-child(3){ width:100%; display:block; bottom:0px; left:0px; }
+
+#header .head ul.overflow { margin:0 auto; text-align:center; }
+#header .head ul li { display:inline-block; line-height:80px; }
+#header .head ul li a { display:block; font-weight:bold; }
+#header .head ul li a:hover { color:#ED6D1F; }
+#header .head ul.overflow li a { padding:0px 40px; }
+
+#header .login_before { position:absolute; right:80px; top:50%; transform:translate(0%,-50%);}
+#header .login_after { position:absolute; right:25px; top:50%; transform:translate(0%,-50%);}
+
+#makerspace_menu li.point a { color:#ED6D1F; }
+
+/* 서브메뉴 */
+#header .sub_menu ul { background:#fff; text-align:center; display:none; }
+#header .sub_menu ul li { display:inline-block; }
+#header .sub_menu ul li a { font-size:17px; color:#686B6F; display:block; padding:10px 25px 15px; }
+#header .sub_menu ul li a:hover { color:#ED6D1F; }
+#header .sub_menu ul.on { display:block; border-bottom:1px solid #E6E6E6; }
+#header .sub_menu ul li.point a { color:#ED6D1F; }
+
+/* 로그인 후 헤더 */
+#header .login_after .picture p { cursor:pointer; }
+#header .login_after .picture .picture_img { position:relative; padding-left:25px; margin-right:5px; }
+#header .login_after .picture .picture_img p { font-size:17px; font-weight:bold; }
+#header .login_after .picture .picture_img img { margin-right:10px; }
+#header .login_after .picture img { margin:0 5px; }
+#header .login_after .picture .picture_img::before { content:""; display:block;  background:#ccc; width:20px; height:20px; border-radius:50%; position:absolute; left:0; top:52%; transform:translate(0%,-50%);}
+#header .login_after li { float:left; }
+#header .login_after li a { padding:0 !important; }
+
+/* 로그인 후 닉네임 클릭시 */
+#header .login_after_menu { position:absolute; top:100px; right:120px;  background:#fff; border-radius:10px; width:200px; text-align:center; display:none; z-index:10; box-shadow:0 0 5px #605f5f; }
+#header .login_after_menu li a { padding:7px; display:block;}
+#header .login_after_menu li:first-child a { border-bottom:1px solid #E6E6E6; }
+
+
+
+
+
+
+
+
+
+/* 반응형 */
+@media screen and ( max-width:1280px ) {
+  #header .sub_menu ul li a { font-size:16px; padding:10px 20px 15px; }
+  #header .head ul.overflow li a { padding:0 25px; }
+}
+@media screen and ( max-width:1024px ) {
+  #header { height:auto; }
+  #header .head { padding:0 25px; }
+  #header .head ul.overflow { text-align:left; }
+  #header .login_before { right:50px; }
+  #header .sub_menu ul { padding-left:140px; text-align:left; }
+  #header .sub_menu ul li a { font-size:15px; padding:7px 13px 10px; }
+
+  #header .login_after_menu { top:86px; right:80px; width:180px; }
+  #header .login_after_menu li a { font-size:15px; }
+}
+@media screen and ( max-width:768px ) {
+  #header { font-size:14px;  }
+  #header .head { height:60px;}
+  #header .head ul li { line-height:60px; }
+  #header .head ul.overflow { display:none; }
+  #header .head .logo img { width:50px; }
+  #header .login_after .picture .picture_img p { font-size:14px; }
+  #header .login_after .picture img { max-width:21px; margin:0 3px;}
+  #header .login_after .picture .picture_img img { width:10px; }
+
+  #header .login_after_menu { top:70px; right:15px; }
+  #header .login_after_menu li a { font-size:14px; }
+
+}
+@media screen and ( max-width:480px ) {
+  #header { font-size:10px; }
+  #header .head { height:40px;}
+  #header .head ul li { line-height:40px; }
+  #header .head .logo img { width:40px; margin-bottom:3px; }
+  #header .login_after .picture .picture_img { padding-left:20px; }
+  #header .login_after .picture .picture_img p { font-size:11px; }
+  #header .login_after .picture .picture_img::before { width:15px; height:15px; }
+  #header .login_after .picture img { max-width:15px; }
+  #header .login_after .picture .picture_img img { margin-right:5px; width:7px; }
+
+  #header .login_after_menu { top:50px; right:15px; width:135px; }
+  #header .login_after_menu li a { font-size:10px; }
+}
